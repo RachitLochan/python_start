@@ -1,0 +1,23 @@
+def calculate_love_score(a,b):
+    a1=0
+    a2=0
+    b1=0
+    b2=0
+    check1=["t","r","u","e","T","R","U","E"]
+    check2=["L","O","V","E","l","o","v","e"]
+    for x in a:
+        if x in check1:
+            a1=a1+1
+    for y in b:
+        if y in check1:
+            a2=a2+1
+    a3=a1+a2
+    for x in a:
+        if x in check2:
+            b1=b1+1
+    for y in b:
+        if y in check2:
+            b2=b2+1
+    b3=b1+b2
+    print(f"{a3}{b3}")
+calculate_love_score("raim","saram")
